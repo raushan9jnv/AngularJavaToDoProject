@@ -9,3 +9,8 @@
 - "test": ng test
 - "lint": ng lint
 - "e2e": ng e2e
+
+
+###Creating component using Angular CLI
+- ng generate component welcome  --> here WELCOME is the component name
+- ng g c welcome

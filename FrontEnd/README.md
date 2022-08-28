@@ -20,6 +20,6 @@
 - username : {{username}}    -->> Interpolation --> Ties up view to the value of property i.e username
 - (click) = handleLogin      -->> Event Binding --> On user button click  --> bind view event to component event method
 - [(ngModel)] = "username"   -->> Two way binding method --> we have to put property name from compnent i.e. username
-    [()]     -->>> banana in box symbol
-    ngModel  -->>> it is called Angular Directives, it has additional meaning on top of HTML
+* [()]     -->>> banana in box symbol
+* ngModel  -->>> it is called Angular Directives, it has additional meaning on top of HTML
  

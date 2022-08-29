@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,10 @@ export class LoginComponent implements OnInit {
   errorMessage = 'Invalid Credentials'
   invalidLogin =false
 
-  constructor() { }
+  //Router
+  //Angular.giveMeRouter
+  //Dependency Injection
+  constructor(private router :Router) { }
 
   ngOnInit() {
   }
@@ -22,6 +26,7 @@ export class LoginComponent implements OnInit {
     // console.log(this.password);   we don't print password..mot goood pratice
 
     if(this.username==="in28minutes" && this.password==="dummy"){
+      this.router.navigate(['welcome'])
       this.invalidLogin = false
     }else{
       this.invalidLogin = true

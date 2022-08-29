@@ -10,7 +10,8 @@ export class ListTodosComponent implements OnInit {
   todos =[
     {id : 1, description : 'Learn to Dance'},
     {id : 2, description : 'become an Expert at Angular'},
-    {id : 3, description : 'Visit India'}
+    {id : 3, description : 'Visit India'},
+    {id :4, description : 'Raushan is Here'}
   ]
 
   // todo={

@@ -4,6 +4,7 @@
 
 //import org.springframework.boot.SpringApplication
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { AppComponent } from '../app.component';
 
 
@@ -18,16 +19,21 @@ import { AppComponent } from '../app.component';
 export class WelcomeComponent implements OnInit {
 
   //String message = "some welcome message"     //Only double quote use for string in java
-  message ='some welcome message'              //single or double quote bothe can be used in javascript or typescript
+  message ='some welcome message' 
+  name = ''             //single or double quote bothe can be used in javascript or typescript
 
   //public SpringBootFirstWebApplication
-  constructor() { }
+  //ActivatedRoute
+  constructor(private route: ActivatedRoute) { }
 
   //void init(){
   ngOnInit() {
     // this.message=5;      WILL GIVE US COMPILATION ERROR AS it is string
 
   // OR ngOnIt() : void {
+    console.log(this.message)
+    // console.log(this.route.snapshot.params['name'])
+    this.name = this.route.snapshot.params['name'];
   }
 
 }

@@ -11,7 +11,7 @@ export class ListTodosComponent implements OnInit {
     {id : 1, description : 'Learn to Dance'},
     {id : 2, description : 'become an Expert at Angular'},
     {id : 3, description : 'Visit India'},
-    {id :4, description : 'Raushan is Here'}
+    {id : 4, description : 'Raushan is Here'}
   ]
 
   // todo={

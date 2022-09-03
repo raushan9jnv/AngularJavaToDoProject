@@ -41,7 +41,7 @@ export class WelcomeComponent implements OnInit {
     this.name = this.route.snapshot.params['name'];
   }
   getWelcomeMessage(){
-    this.service.executeHelloWorldBeanService();
+    console.log(this.service.executeHelloWorldBeanService());
     // console.log("get Welcome message");
   }
 

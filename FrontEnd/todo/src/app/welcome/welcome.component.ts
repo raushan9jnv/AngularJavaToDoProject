@@ -6,6 +6,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AppComponent } from '../app.component';
+import { WelcomeDataService } from '../service/data/welcome-data.service';
 
 
 //ComponentScan(value= "com.in28minutes.springboot.web")  // annoatation
@@ -24,7 +25,11 @@ export class WelcomeComponent implements OnInit {
 
   //public SpringBootFirstWebApplication
   //ActivatedRoute
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private route: ActivatedRoute,
+    private service: WelcomeDataService) { 
+
+    }
 
   //void init(){
   ngOnInit() {
@@ -35,8 +40,14 @@ export class WelcomeComponent implements OnInit {
     // console.log(this.route.snapshot.params['name'])
     this.name = this.route.snapshot.params['name'];
   }
+  getWelcomeMessage(){
+    this.service.executeHelloWorldBeanService();
+    // console.log("get Welcome message");
+  }
 
 }
+
+
 
 export class Class1{
 
